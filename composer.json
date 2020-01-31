@@ -1,0 +1,15 @@
+{
+  "name": "mohammad/gzl-kc",
+  "description": "SSO Create User through Admin Rest API",
+  "type": "project",
+  "require": {
+    "guzzlehttp/guzzle": "^6.5"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohammad Mojrian",
+      "email": "mojrian70@gmail.com"
+    }
+  ]
+}
