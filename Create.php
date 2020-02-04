@@ -86,7 +86,7 @@ class Create {
 }
 
 // Here CreateUser function is called to add a new user to SSO server in the specified scope (e.g. demo)
-$create_client = new Create('http://localhost:8180/auth', 'real_name', 'user_with_user_management_role', 'password_of_user');
+$create_client = new Create('keycloak_auth_base_url', 'real_name', 'user_with_user_management_role', 'password_of_user');
 $response = $create_client->createUser();
 if (isset($response[0])) {
     echo 'Response Status Code: '.$response[0]->getStatusCode();
