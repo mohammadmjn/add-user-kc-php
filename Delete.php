@@ -99,7 +99,7 @@ class Delete {
 }
 
 
-$client = new Delete('keycloak_auth_base_url', 'real_name', 'user_with_user_management_role', 'password_of_user', 'username_to_update');
+$client = new Delete('keycloak_auth_base_url', 'real_name', 'user_with_user_management_role', 'password_of_user', 'username_to_delete');
 $response = $client->deleteUser();
 if (isset($response[0])) {
     echo 'User deleted successfully with status code: '.$response[0]->getStatusCode();
